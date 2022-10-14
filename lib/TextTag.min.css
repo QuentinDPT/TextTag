@@ -1,0 +1,1 @@
+.TT_parent{position:relative}.TT_tooltip{position:absolute;top:0;border-radius:.2em;border:1px solid #333}.TT_tooltip>*{margin-top:1.5rem;background-color:#fff;padding:.5em;border-radius:0 0 .2em .2em;overflow:hidden;overflow-y:auto;border-top:1px solid;max-height:70px}.TT_tooltip>*>:hover{background-color:#ccc}

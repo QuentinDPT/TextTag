@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Custom Input</title>
+
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="">
+      <div class="">
+        <textarea id="ATextArea" name="name" rows="8" cols="80"></textarea>
+      </div>
+      <div class="">
+        <input id="AnInput" type="text" name="" value="">
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    window.onload = function(){
+      TextTag
+        .on("ATextArea")
+        .addTag("#",function(search, callback){
+          let inp = ["1","2","3","4","5","6","7","8"];
+          let outp = [];
+
+          for(let i of inp){
+            if(i.indexOf(search) != -1)
+              outp.push(i);
+          }
+
+          callback(outp);
+        })
+        .addTag("@",function(search, callback){
+          let inp = ["quentin","albert","roberta","sylvain","stéphane de mon mir aille"];
+          let outp = [];
+
+          for(let i of inp){
+            if(i.indexOf(search) != -1)
+              outp.push(i);
+          }
+
+          callback(outp);
+        });
+    }
+  </script>
+
+  <script src="./script.js" charset="utf-8"></script>
+</html>
